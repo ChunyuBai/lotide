@@ -1,21 +1,21 @@
-const assertEqual = function(actual, expected) {
+// const assertEqual = function(actual, expected) {
   
-  console.assert(actual === expected, `${actual} !== ${expected} 🛑🛑🛑`);
-  if (actual === expected) {
-    console.log(`Assertion passed:`, `${actual} === ${expected} ✅✅✅`);
-  }
-};
+//   console.assert(actual === expected, `${actual} !== ${expected} 🛑🛑🛑`);
+//   if (actual === expected) {
+//     console.log(`Assertion passed:`, `${actual} === ${expected} ✅✅✅`);
+//   }
+// };
 
-const eqArrays = (arr1,arr2) => {
-  if(arr1.length !== arr2.length){
-    return false;
-  } 
-  for(let i = 0; i < arr1.length; i++){
-    if(arr1[i] !== arr2[i]){
-      return false;
-    }
-  } return true;
-}
+// const eqArrays = (arr1,arr2) => {
+//   if(arr1.length !== arr2.length){
+//     return false;
+//   } 
+//   for(let i = 0; i < arr1.length; i++){
+//     if(arr1[i] !== arr2[i]){
+//       return false;
+//     }
+//   } return true;
+// }
 
 //middle function
 const middle = (arr) => {
@@ -41,17 +41,18 @@ const middle = (arr) => {
 
 //For arrays with one or two elements, there is no middle. Return an empty array.
 
-middle([1]) // => []
-middle([1, 2]) // => []
+// middle([1]) // => []
+// middle([1, 2]) // => []
 
-//For arrays with odd number of elements, an array containing a single middle element should be returned.
+// //For arrays with odd number of elements, an array containing a single middle element should be returned.
 
 
-middle([1, 2, 3]) // => [2]
-middle([1, 2, 3, 4, 5]) // => [3]
+// middle([1, 2, 3]) // => [2]
+// middle([1, 2, 3, 4, 5]) // => [3]
 
-//For arrays with an even number of elements, an array containing the two elements in the middle should be returned
+// //For arrays with an even number of elements, an array containing the two elements in the middle should be returned
 
-middle([1, 2, 3, 4]) // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
+// middle([1, 2, 3, 4]) // => [2, 3]
+// middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 
+module.exports = middle;
