@@ -10,7 +10,7 @@
 // };
 //Refactoring head
 
-const assertEqual = require('./test/assertEqualTest');
+const assertEqual = require('./assertEqual');
 const head = function (arr) {
   return arr[0];
 }
@@ -18,5 +18,7 @@ const head = function (arr) {
 
 
 // TEST CODE
-assertEqual(head([5,6,7]),5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]),"Hell");
+// assertEqual(head([5,6,7]),5);
+// assertEqual(head(["Hello", "Lighthouse", "Labs"]),"Hell");
+
+module.exports = head;
