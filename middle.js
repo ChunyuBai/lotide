@@ -21,22 +21,21 @@
 const middle = (arr) => {
   let middleArr = [];
   if(arr.length <= 2) {
-     console.log(middleArr);
-     return;
+     return [];
   }
   
   if(arr.length > 2 && arr.length % 2 === 0) {
     //This handle an even length array
     const middleIndex1 = arr.length / 2;
     const middleIndex2 = middleIndex1 - 1;
-    middleArr.push(arr[middleIndex1]);
     middleArr.push(arr[middleIndex2]);
+    middleArr.push(arr[middleIndex1]);
   } else {
     //This handle an odd length array
     const middleIndex = Math.floor(arr.length / 2)
     middleArr.push(arr[middleIndex]);
   }
-  console.log(middleArr);
+  return middleArr;
 }
 
 //For arrays with one or two elements, there is no middle. Return an empty array.
